@@ -1,8 +1,14 @@
+autopep8==1.5.6
 certifi==2020.12.5
 chardet==4.0.0
 idna==2.10
+pycodestyle==2.7.0
+PyQt5==5.15.4
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.8.1
 requests==2.25.1
 ring==0.7.3
 six==1.15.0
+toml==0.10.2
 urllib3==1.26.4
 wirerope==0.3.0
