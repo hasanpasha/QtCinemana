@@ -4,11 +4,13 @@ import subprocess
 def mpvPlayer(video, sub):
     playLineArgs = ['mpv']
 
-    video = video.replace("\\", '')
-    playLineArgs.append(video)
+    if video != None:
+        video = video.replace("\\", '')
+        playLineArgs.append(video)
 
-    sub = sub.replace("\\", '')
-    playLineArgs.append(f'--sub-file={sub}')
+    if sub != None:
+        sub = sub.replace("\\", '')
+        playLineArgs.append(f'--sub-file={sub}')
 
 
     if len(playLineArgs) > 1:
