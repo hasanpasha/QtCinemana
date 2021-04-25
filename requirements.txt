@@ -1,0 +1,8 @@
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+requests==2.25.1
+ring==0.7.3
+six==1.15.0
+urllib3==1.26.4
+wirerope==0.3.0

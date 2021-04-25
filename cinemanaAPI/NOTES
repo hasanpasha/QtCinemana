@@ -1,0 +1,18 @@
+
+class CinemanaAPI:
+    SEARCH_API = 'https://cinemana.shabakaty.com/api/android/AdvancedSearch?'
+    VIDEOS_API = 'https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/'
+    EPISODES_API = 'https://cinemana.shabakaty.com/api/android/videoSeason/id/'
+    ALL_INFO = 'https://cinemana.shabakaty.com/api/android/allVideoInfo/id/'
+
+
+
+    params = {}
+    params['videoTitle'] = self.lineEdit.text()
+    params['type'] = self.comboBox_3.currentText().lower()
+
+    # if self.spinBox.value() != 'Year':
+    #     params['year'] = int(self.spinBox.value())
+
+    if self.comboBox_4.currentText() != 'Stars':
+        params['star'] = int(self.comboBox_4.currentText())
