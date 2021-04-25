@@ -1092,3 +1092,890 @@
 2021-04-25 13:52:01,050 - cinemanaAPI - DEBUG - fetching data
 2021-04-25 13:52:03,046 - cinemanaAPI - DEBUG - getting json data
 2021-04-25 13:52:03,051 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:14:07,728 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:14:07,730 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:14:14,164 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:14:14,167 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:14:27,817 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:14:27,818 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:14:28,371 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:14:28,374 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:15:38,805 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=movie
+2021-04-25 14:15:38,806 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:15:39,254 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:15:39,257 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:15:46,530 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:15:46,531 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:15:48,401 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:15:48,404 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:15:51,469 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:15:51,470 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:15:51,603 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:15:51,605 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:16:34,853 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:16:34,856 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:16:35,145 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:16:35,146 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:16:41,718 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:16:41,720 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:16:45,032 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:16:45,034 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:16:45,034 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:16:45,035 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:16:47,333 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:16:47,336 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:17:48,441 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:17:48,446 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:17:48,588 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:17:48,589 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:17:55,018 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:17:55,019 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:17:55,517 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:17:55,519 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:17:55,520 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:17:55,521 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:17:56,218 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:17:56,222 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:18:30,669 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:18:30,673 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:18:30,812 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:18:30,813 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:18:33,661 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:18:33,662 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:18:35,738 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:18:35,740 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:18:35,741 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:18:35,741 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:18:36,484 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:18:36,487 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:18:36,488 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:18:36,488 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:18:36,786 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:18:36,790 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:19:20,222 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:19:20,223 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:19:20,746 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:19:20,753 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:19:36,666 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:19:38,086 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:19:38,091 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:19:39,241 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:19:39,243 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:19:39,243 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:19:39,248 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:19:39,500 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:19:39,503 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:19:39,504 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:19:39,505 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:19:39,801 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:19:39,803 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:20:45,048 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:20:45,055 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:20:47,120 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:20:47,123 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:21:24,085 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/112884
+2021-04-25 14:21:24,086 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:21:24,582 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:21:24,584 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:21:24,585 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/112884
+2021-04-25 14:21:24,585 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:21:24,882 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:21:24,886 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:21:24,887 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/112884
+2021-04-25 14:21:24,888 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:21:25,137 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:21:25,138 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:24:38,193 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:24:38,194 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:24:41,806 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:24:41,808 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:24:50,861 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:24:52,220 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/112884
+2021-04-25 14:24:52,221 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:24:56,932 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:24:56,935 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:24:56,936 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/112884
+2021-04-25 14:24:56,936 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:24:59,523 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:24:59,526 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:24:59,584 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/112884
+2021-04-25 14:24:59,584 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:25:00,276 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:25:00,283 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:26:27,607 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:26:27,608 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:26:27,935 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:26:27,936 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:26:31,991 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:26:32,993 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:26:32,995 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:26:33,149 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:26:33,155 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:26:33,156 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:26:33,157 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:26:33,425 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:26:33,429 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:26:33,430 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:26:33,431 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:26:33,588 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:26:33,589 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:27:46,551 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:27:46,553 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:27:47,473 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:27:47,475 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:27:52,325 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:27:53,246 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:27:53,247 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:27:53,379 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:27:53,380 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:27:53,381 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:27:53,382 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:27:53,503 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:27:53,504 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:27:53,506 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:27:53,507 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:27:53,590 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:27:53,591 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:38,017 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=movie
+2021-04-25 14:28:38,021 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:28:38,493 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:28:38,496 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:41,380 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/82440
+2021-04-25 14:28:41,382 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:28:41,726 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:28:41,728 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:41,728 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/82440
+2021-04-25 14:28:41,729 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:28:41,899 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:28:41,900 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:59,522 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/625
+2021-04-25 14:28:59,523 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:28:59,812 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:28:59,815 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:59,815 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/625
+2021-04-25 14:28:59,816 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:28:59,921 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:28:59,923 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:28:59,928 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/625
+2021-04-25 14:28:59,929 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:29:00,095 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:29:00,095 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:28,682 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=movie
+2021-04-25 14:31:28,682 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:28,871 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:28,872 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:31,691 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/308225
+2021-04-25 14:31:31,692 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:31,806 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:31,807 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:31,808 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/308225
+2021-04-25 14:31:31,808 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:31,948 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:31,948 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:37,737 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:31:37,742 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:37,909 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:37,910 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:41,805 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:31:41,807 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:42,009 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:42,011 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:42,012 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:31:42,012 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:42,175 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:42,178 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:42,182 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:31:42,183 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:42,364 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:42,365 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:31:56,002 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=game+of+&type=series
+2021-04-25 14:31:56,002 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:31:56,357 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:31:56,358 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:00,364 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 14:32:00,364 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:00,476 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:00,477 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:00,478 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/653
+2021-04-25 14:32:00,478 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:00,572 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:00,576 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:00,585 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 14:32:00,586 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:00,704 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:00,705 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:44,505 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/58684
+2021-04-25 14:32:44,506 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:44,659 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:44,661 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:44,662 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/58684
+2021-04-25 14:32:44,662 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:44,790 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:44,792 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:32:44,796 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/58684
+2021-04-25 14:32:44,796 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:32:44,913 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:32:44,914 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:21,659 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=movie
+2021-04-25 14:34:21,660 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:22,578 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:22,580 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:33,239 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:34:33,240 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:34,328 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:34,331 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:38,920 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:34:38,920 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:39,074 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:39,076 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:39,076 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:34:39,077 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:39,191 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:39,193 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:39,197 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:34:39,198 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:39,293 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:39,294 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:45,041 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:34:45,042 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:34:45,044 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:34:47,677 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:34:47,679 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:34:47,687 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:34:49,573 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 14:34:49,573 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:49,732 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:49,733 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:49,733 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 14:34:49,733 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:49,829 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:49,831 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:49,834 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 14:34:49,834 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:49,935 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:49,936 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:59,481 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/112884
+2021-04-25 14:34:59,482 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:59,606 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:59,607 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:59,608 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/112884
+2021-04-25 14:34:59,608 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:59,727 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:59,731 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:34:59,734 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/112884
+2021-04-25 14:34:59,735 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:34:59,852 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:34:59,853 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:40:16,176 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=dar&type=series
+2021-04-25 14:40:16,177 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:40:16,418 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:40:16,420 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:40:22,379 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:40:22,380 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:40:22,597 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:40:22,598 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:40:22,598 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:40:22,598 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:40:22,765 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:40:22,767 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:40:22,769 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:40:22,769 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:40:22,897 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:40:22,897 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:41:00,386 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:41:00,387 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:41:00,617 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:41:00,619 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:41:04,440 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/122598
+2021-04-25 14:41:04,441 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:41:04,556 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:41:04,557 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:41:04,558 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/122598
+2021-04-25 14:41:04,559 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:41:04,675 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:41:04,679 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:41:04,739 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/122598
+2021-04-25 14:41:04,739 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:41:04,857 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:41:04,857 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:45:21,421 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:45:21,422 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:45:22,244 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:45:22,248 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:46:46,986 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 14:46:46,987 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:46:47,216 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:46:47,217 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:46:47,218 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 14:46:47,219 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:46:47,487 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:46:47,491 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:47:09,378 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:47:09,379 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:47:09,869 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:47:09,872 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:47:17,575 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 14:47:17,577 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:47:17,756 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:47:17,757 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:47:17,758 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 14:47:17,759 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:47:17,963 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:47:17,968 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:47:40,087 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=movie
+2021-04-25 14:47:40,088 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:47:43,662 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:47:43,665 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:47:58,937 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:47:58,937 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:48:00,118 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:48:00,121 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:48:13,924 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 14:48:13,927 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:48:14,433 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:48:14,435 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:48:14,436 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 14:48:14,437 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:48:14,654 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:48:14,658 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:48:14,727 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 14:48:14,728 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:48:14,829 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:48:14,830 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:49:18,923 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:49:18,923 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:49:21,424 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:49:21,427 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:49:58,924 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 14:49:58,926 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:50:01,148 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:50:01,149 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:50:01,150 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 14:50:01,151 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:50:02,478 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:50:02,482 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:50:02,525 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 14:50:02,526 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:50:04,935 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:50:04,937 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:50:38,490 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=game+of&type=series
+2021-04-25 14:50:38,490 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:50:39,598 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:50:39,600 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:51:01,795 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 14:51:01,797 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:51:07,619 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:51:07,620 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:51:07,621 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/653
+2021-04-25 14:51:07,621 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:51:08,902 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:51:08,905 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:51:08,960 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 14:51:08,965 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:51:09,486 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:51:09,487 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:58:43,263 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 14:58:43,264 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:58:43,428 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:58:43,429 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:58:46,480 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/625
+2021-04-25 14:58:46,481 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:58:46,646 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:58:46,647 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:58:46,647 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/625
+2021-04-25 14:58:46,647 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:58:46,799 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:58:46,800 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 14:58:46,823 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/625
+2021-04-25 14:58:46,824 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 14:58:46,962 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 14:58:46,962 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:05:56,383 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 15:05:56,384 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:05:56,941 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:05:56,942 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:06:43,120 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 15:06:43,121 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:06:44,510 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:06:44,512 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:06:44,513 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 15:06:44,513 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:06:44,625 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:06:44,629 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:06:44,658 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 15:06:44,659 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:06:46,478 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:06:46,480 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:08:24,696 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 15:08:24,696 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:08:24,868 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:08:24,869 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:08:33,555 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 15:08:33,555 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:08:33,647 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:08:33,648 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:08:33,649 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 15:08:33,649 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:08:33,730 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:08:33,732 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:08:33,738 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 15:08:33,738 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:08:33,834 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:08:33,837 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:32,246 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 15:11:32,246 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:33,312 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:33,315 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:43,296 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=da&type=series
+2021-04-25 15:11:44,163 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46922
+2021-04-25 15:11:44,164 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:44,267 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:44,268 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:44,268 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/46922
+2021-04-25 15:11:44,268 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:44,359 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:44,361 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:44,367 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46922
+2021-04-25 15:11:44,368 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:44,457 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:44,459 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:45,901 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46926
+2021-04-25 15:11:45,902 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:46,011 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:46,012 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:46,012 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46926
+2021-04-25 15:11:46,013 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:46,116 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:46,117 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:51,014 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/46928
+2021-04-25 15:11:51,014 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:51,417 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:51,418 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:11:51,418 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/46928
+2021-04-25 15:11:51,419 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:11:51,511 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:11:51,511 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:03,238 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=game&type=series
+2021-04-25 15:12:03,239 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:03,368 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:03,370 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:12,885 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 15:12:12,885 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:12,985 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:12,986 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:12,987 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/653
+2021-04-25 15:12:12,987 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:13,084 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:13,087 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:13,095 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 15:12:13,096 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:13,191 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:13,193 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:15,277 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 15:12:15,278 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 15:12:19,792 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/657
+2021-04-25 15:12:19,792 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:19,873 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:19,873 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:12:19,874 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/657
+2021-04-25 15:12:19,874 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:12:19,966 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:12:19,967 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:50,050 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=game+of&type=series
+2021-04-25 15:15:50,051 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:50,192 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:50,193 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:52,888 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 15:15:52,888 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:53,028 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:53,029 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:53,029 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/653
+2021-04-25 15:15:53,030 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:53,182 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:53,184 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:53,192 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 15:15:53,194 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:53,328 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:53,328 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:56,364 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/654
+2021-04-25 15:15:56,365 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:56,664 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:56,665 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:56,666 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/654
+2021-04-25 15:15:56,666 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:57,047 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:57,047 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:57,802 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/658
+2021-04-25 15:15:57,803 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:57,890 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:57,893 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:15:57,895 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/658
+2021-04-25 15:15:57,895 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:15:57,977 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:15:57,979 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:00,050 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/654
+2021-04-25 15:16:00,051 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/654
+2021-04-25 15:16:02,018 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 15:16:02,018 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 15:16:02,910 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/661
+2021-04-25 15:16:02,910 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:03,033 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:03,034 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:03,035 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/661
+2021-04-25 15:16:03,035 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:03,225 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:03,228 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:04,628 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/648
+2021-04-25 15:16:04,629 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:04,787 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:04,788 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:04,789 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/648
+2021-04-25 15:16:04,789 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:04,952 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:04,953 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:10,926 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:10,926 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:11,077 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:11,078 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:11,078 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:11,079 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:11,225 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:11,226 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:12,942 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276721
+2021-04-25 15:16:12,942 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:13,085 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:13,086 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:13,087 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276721
+2021-04-25 15:16:13,087 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:13,192 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:13,193 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:15,778 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:15,778 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:18,044 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276716
+2021-04-25 15:16:18,045 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:18,134 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:18,135 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:18,135 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276716
+2021-04-25 15:16:18,136 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:18,231 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:18,231 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:18,644 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:18,645 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:19,048 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276721
+2021-04-25 15:16:19,049 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276721
+2021-04-25 15:16:20,312 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276720
+2021-04-25 15:16:20,313 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:20,453 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:20,454 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:20,455 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276720
+2021-04-25 15:16:20,455 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:20,830 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:20,831 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:20,833 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276719
+2021-04-25 15:16:20,833 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:21,038 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:21,039 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:21,040 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276719
+2021-04-25 15:16:21,040 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:21,393 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:21,394 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:21,396 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:21,397 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:21,400 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:21,400 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:21,460 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276716
+2021-04-25 15:16:21,460 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276716
+2021-04-25 15:16:22,096 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:22,097 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:23,022 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276720
+2021-04-25 15:16:23,023 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276720
+2021-04-25 15:16:23,666 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276718
+2021-04-25 15:16:23,667 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276718
+2021-04-25 15:16:23,986 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276717
+2021-04-25 15:16:23,986 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:24,360 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:24,361 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:24,361 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276717
+2021-04-25 15:16:24,362 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:24,476 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:24,477 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:24,479 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276717
+2021-04-25 15:16:24,479 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276717
+2021-04-25 15:16:25,850 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/97340
+2021-04-25 15:16:25,851 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:25,924 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:25,924 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:25,925 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/97340
+2021-04-25 15:16:25,925 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:26,011 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:26,013 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:26,256 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/92988
+2021-04-25 15:16:26,256 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:26,375 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:26,377 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:26,377 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/92988
+2021-04-25 15:16:26,377 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:26,475 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:26,478 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:26,542 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/92986
+2021-04-25 15:16:26,542 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:26,634 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:26,635 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:26,635 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/92986
+2021-04-25 15:16:26,636 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:26,731 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:26,732 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:27,038 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/92989
+2021-04-25 15:16:27,038 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:27,151 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:27,153 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:27,155 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/92989
+2021-04-25 15:16:27,157 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:27,240 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:27,242 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:27,295 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/97339
+2021-04-25 15:16:27,295 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:27,471 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:27,472 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:27,472 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/97339
+2021-04-25 15:16:27,472 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:27,691 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:27,694 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:27,698 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/97340
+2021-04-25 15:16:27,702 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/97340
+2021-04-25 15:16:29,142 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/38703
+2021-04-25 15:16:29,143 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,227 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,228 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:29,229 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/38703
+2021-04-25 15:16:29,229 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,319 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,319 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:29,510 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/38699
+2021-04-25 15:16:29,510 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,590 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,593 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:29,596 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/38699
+2021-04-25 15:16:29,596 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,680 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,682 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:29,764 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/38698
+2021-04-25 15:16:29,765 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,850 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,851 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:29,852 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/38698
+2021-04-25 15:16:29,852 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:29,933 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:29,934 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:31,988 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211507
+2021-04-25 15:16:31,988 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:32,366 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:32,369 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:32,370 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/211507
+2021-04-25 15:16:32,370 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:32,487 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:32,490 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:32,494 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211507
+2021-04-25 15:16:32,494 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:32,620 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:32,621 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:33,904 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211511
+2021-04-25 15:16:33,905 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:34,005 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:34,006 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:34,007 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211511
+2021-04-25 15:16:34,007 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:34,112 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:34,113 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:34,889 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211521
+2021-04-25 15:16:34,889 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:35,251 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:35,258 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:35,259 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211521
+2021-04-25 15:16:35,259 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:35,440 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:35,441 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:35,512 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211527
+2021-04-25 15:16:35,512 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:35,926 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:35,926 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:35,927 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211527
+2021-04-25 15:16:35,927 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:36,016 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:36,019 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:37,354 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211583
+2021-04-25 15:16:37,355 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:37,457 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:37,459 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:37,459 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211583
+2021-04-25 15:16:37,460 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:37,542 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:37,543 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:37,786 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211589
+2021-04-25 15:16:37,787 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:37,913 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:37,914 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:37,915 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211589
+2021-04-25 15:16:37,915 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:38,016 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:38,017 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:39,006 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211579
+2021-04-25 15:16:39,007 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:39,192 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:39,193 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:39,193 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211579
+2021-04-25 15:16:39,193 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:39,309 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:39,310 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:39,414 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211575
+2021-04-25 15:16:39,414 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:39,547 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:39,548 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:39,549 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211575
+2021-04-25 15:16:39,549 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:39,674 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:39,675 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:41,682 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211587
+2021-04-25 15:16:41,682 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:41,791 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:41,792 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:41,792 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211587
+2021-04-25 15:16:41,793 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:41,875 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:41,876 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:42,442 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211591
+2021-04-25 15:16:42,442 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:42,543 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:42,545 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:42,545 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211591
+2021-04-25 15:16:42,545 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:42,649 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:42,650 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:45,708 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211593
+2021-04-25 15:16:45,709 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:45,802 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:45,803 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:45,804 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211593
+2021-04-25 15:16:45,804 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:45,891 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:45,894 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:46,852 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211615
+2021-04-25 15:16:46,852 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:46,983 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:46,984 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:46,985 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211615
+2021-04-25 15:16:46,985 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:47,106 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:47,109 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:48,352 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211619
+2021-04-25 15:16:48,353 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:48,473 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:48,476 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:16:48,478 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211619
+2021-04-25 15:16:48,479 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:16:48,567 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:16:48,567 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:03,590 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211609
+2021-04-25 15:17:03,591 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:04,424 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:04,425 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:04,425 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211609
+2021-04-25 15:17:04,426 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:04,630 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:04,630 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:06,255 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211603
+2021-04-25 15:17:06,255 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:07,015 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:07,015 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:07,016 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211603
+2021-04-25 15:17:07,016 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:08,002 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:08,003 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:10,440 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/211613
+2021-04-25 15:17:10,441 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:11,616 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:11,617 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:11,618 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/211613
+2021-04-25 15:17:11,618 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:11,726 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:11,729 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:37,370 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=game&type=series
+2021-04-25 15:17:37,371 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:37,499 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:37,501 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:47,494 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/653
+2021-04-25 15:17:47,495 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:48,331 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:48,334 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:48,337 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/videoSeason/id/653
+2021-04-25 15:17:48,337 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:49,277 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:49,279 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:49,289 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/653
+2021-04-25 15:17:49,289 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:54,442 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:54,447 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:56,782 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/657
+2021-04-25 15:17:56,783 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:56,898 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:56,898 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:17:56,899 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/657
+2021-04-25 15:17:56,899 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:17:57,016 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:17:57,017 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:18:01,763 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/276721
+2021-04-25 15:18:01,763 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:18:02,240 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:18:02,241 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:18:02,242 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/276721
+2021-04-25 15:18:02,242 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:18:02,584 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:18:02,584 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:23:26,968 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=the+day&type=movie
+2021-04-25 15:23:26,969 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:23:27,085 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:23:27,086 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:23:37,329 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/29067
+2021-04-25 15:23:37,330 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:23:37,435 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:23:37,436 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:23:37,436 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/29067
+2021-04-25 15:23:37,437 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:23:37,543 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:23:37,545 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:25:58,976 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=the+day&type=movie
+2021-04-25 15:25:58,976 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:25:59,105 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:25:59,107 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:26:03,678 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/29067
+2021-04-25 15:26:03,678 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:26:03,785 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:26:03,786 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:26:03,786 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/29067
+2021-04-25 15:26:03,786 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:26:03,932 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:26:03,933 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:30:51,340 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=the+day&type=movie
+2021-04-25 15:30:51,341 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:30:51,478 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:30:51,479 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:30:53,699 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/29067
+2021-04-25 15:30:53,700 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:30:53,831 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:30:53,832 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:30:53,832 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/29067
+2021-04-25 15:30:53,833 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:30:53,936 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:30:53,939 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:31:03,661 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=the+day&type=movie
+2021-04-25 15:31:04,512 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/allVideoInfo/id/23006
+2021-04-25 15:31:04,512 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:31:04,624 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:31:04,627 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:31:04,627 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/transcoddedFiles/id/23006
+2021-04-25 15:31:04,628 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:31:04,750 - cinemanaAPI - DEBUG - getting json data
+2021-04-25 15:31:04,752 - cinemanaAPI - INFO - data fetched successfully
+2021-04-25 15:38:18,709 - cinemanaAPI - DEBUG - get data from : https://cinemana.shabakaty.com/api/android/AdvancedSearch?videoTitle=the+day&type=movie
+2021-04-25 15:38:18,729 - cinemanaAPI - DEBUG - fetching data
+2021-04-25 15:38:28,825 - cinemanaAPI - ERROR - HTTPSConnectionPool(host='cinemana.shabakaty.com', port=443): Max retries exceeded with url: /api/android/AdvancedSearch?videoTitle=the+day&type=movie (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f7a86810370>: Failed to establish a new connection: [Errno -2] Name or service not known'))
