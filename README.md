@@ -3,7 +3,11 @@
 
 ## Screenshots
   ##### Search
-![SEARCH](https://github.com/hasanpasha/QtCinemana/blob/main/screenshots/search.png)
+  ![SEARCH](https://github.com/hasanpasha/QtCinemana/blob/main/screenshots/search.png)
+  ##### Home
+  ![HOME](https://github.com/hasanpasha/QtCinemana/blob/main/screenshots/home.png)
+  ##### Series
+  ![HOME](https://github.com/hasanpasha/QtCinemana/blob/main/screenshots/series.png)
 
 
 ## Usage
