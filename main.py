@@ -4,13 +4,15 @@ from cinemanaAPI import *
 
 # Import PyQt5
 from PyQt5.QtWidgets import *
+from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.uic import loadUiType
 
+
 from os import path
 
-from scripts import get_thumb_image, get_poster_image
+from scripts import get_thumb_image, get_poster_image, mpvPlayer
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 
@@ -29,11 +31,39 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.series_listwidget.itemClicked.connect(self.viewItem)
 
 
+        # Videos and subs for player
+        self.videos = {}
+        self.subs = {}
+
+
     def handleButtons(self):
         self.btnsearch.clicked.connect(self.search)
         self.btnhome.clicked.connect(
             lambda: self.stackedWidget.setCurrentIndex(0))
+        self.btnplay.clicked.connect(self.player)
+        self.tbtnclear_search.clicked.connect(self.clearSearchResult)
+        
 
+    def player(self):
+        # print(self.videos, self.subs)
+
+        # Get current chosen quality and sub
+        qua = self.coqual.currentText()
+        sub = self.cosubs.currentText()
+
+        video = self.videos[qua]
+        subtitle = self.subs[sub]
+
+        print(video, subtitle)
+
+        mpvPlayer(video, subtitle)
+
+    def clearSearchResult(self):
+        self.movies_listwidget.clear()
+        self.series_listwidget.clear()
+
+        # Clear search line
+        self.elsearch
 
     def search(self):
         if search_kword := self.elsearch.text():
@@ -105,10 +135,10 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             # if item is movie
             if kind == '1':
                 # Hide episodes list
-                self.twepisodes.hide()
+                self.tbepisodes.hide()
 
             else:
-                self.twepisodes.show()
+                self.tbepisodes.show()
 
                 eps = {}
                 seasons = []
@@ -118,15 +148,32 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                 if episodes_info:
                     # print(episodes_info)
                     for i in episodes_info:
-                        if i[season] not in seasons:
-                            eps[f'{i[season]}'] = []
+                        if i['season'] not in seasons:
+                            # print(i['season'])
+                            seasons.append(i['season'])
+                            eps[f"{i['season']}"] = []
                     for i in episodes_info:
-                        eps[f'{i[season]}'].append(i)
+                        eps[f"{i['season']}"].append(i)
 
+                    # print(seasons)
+                    self.tbepisodes.clear()
                     for s in sorted(seasons):
-                        qq = QTreeWidget()
-                        qq.add
-                        # for i in 
+                      
+                        tab = QListWidget()
+                        tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
+                        tab.itemClicked.connect(self.refreshInfo)
+
+                        for e in eps[f"{s}"]:
+                            eps_number = e['episodeNummer']
+                            episode = QListWidgetItem(f"episode {eps_number}")
+                            episode.setData(Qt.UserRole, e['nb'])
+
+                            # Set Item not selectable
+                            episode.setFlags(episode.flags() |
+                                             ~Qt.ItemIsSelectable)
+                            tab.addItem(episode)
+
+                        self.tbepisodes.addTab(tab, f'season {s}')
                         
                 else:
                     print(_)
@@ -135,22 +182,29 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
             # Add available Subs
             self.cosubs.clear()
+            self.subs = {}
             for i in info['translations']:
+                # print(i)
                 if i['extention'] != 'vtt':
                     self.cosubs.addItem(i['name'])
+                    self.subs[i['name']] = i['file'] 
 
             # Add available video qualities
             # Get videos data
             videos_data, _ = getVideos(nb)
             if videos_data:
+                self.videos = {}
                 self.coqual.clear()
                 for i in videos_data:
+                    # print(i)
                     self.coqual.addItem(i['resolution'])
+                    self.videos[i['resolution']] = i['videoUrl']
+
             else:
                 print(_)
                 return
 
-
+            # print(self.videos, self.subs)
             # Set Poster image
             if data := get_poster_image(info['imgObjUrl']):
                 pixmap = QPixmap()
@@ -191,6 +245,39 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         else:
             print(_)
             return
+
+    def refreshInfo(self, item):
+        nb = item.data(Qt.UserRole)
+        print(nb)
+
+        # Add available Subs
+        self.cosubs.clear()
+        eps_info , _ = getInfos(nb)
+
+        if eps_info:
+            self.subs = {}
+            for i in eps_info['translations']:
+                if i['extention'] != 'vtt':
+                    self.cosubs.addItem(i['name'])
+                    self.subs[i['name']] = i['file']
+
+        else:
+            print(_)
+            return
+
+        # Add available video qualities
+        # Get videos data
+        videos_data, _ = getVideos(nb)
+        if videos_data:
+            self.videos = {}
+            self.coqual.clear()
+            for i in videos_data:
+                self.coqual.addItem(i['resolution'])
+                self.videos[i['resolution']] = i['videoUrl']
+        else:
+            print(_)
+            return
+
 
 
 if __name__ == '__main__':

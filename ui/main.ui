@@ -33,7 +33,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Home">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -64,7 +64,7 @@
            <number>2</number>
           </property>
           <item>
-           <layout class="QHBoxLayout" name="header" stretch="1,2,0">
+           <layout class="QHBoxLayout" name="header" stretch="1,0,2,0">
             <property name="leftMargin">
              <number>4</number>
             </property>
@@ -89,6 +89,13 @@
                </size>
               </property>
              </spacer>
+            </item>
+            <item>
+             <widget class="QToolButton" name="tbtnclear_search">
+              <property name="text">
+               <string>X</string>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QLineEdit" name="elsearch"/>
@@ -443,25 +450,10 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_9">
                   <item>
-                   <spacer name="horizontalSpacer_5">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
+                   <widget class="QTabWidget" name="tbepisodes">
+                    <property name="currentIndex">
+                     <number>-1</number>
                     </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>40</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                  <item>
-                   <widget class="QTreeWidget" name="twepisodes">
-                    <column>
-                     <property name="text">
-                      <string notr="true">1</string>
-                     </property>
-                    </column>
                    </widget>
                   </item>
                   <item>
@@ -480,21 +472,42 @@
                      </spacer>
                     </item>
                     <item>
-                     <layout class="QHBoxLayout" name="horizontalLayout_10">
+                     <layout class="QHBoxLayout" name="horizontalLayout_6">
                       <item>
-                       <widget class="QComboBox" name="coqual"/>
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
                       </item>
                       <item>
-                       <widget class="QComboBox" name="cosubs"/>
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_10">
+                          <item>
+                           <widget class="QComboBox" name="coqual"/>
+                          </item>
+                          <item>
+                           <widget class="QComboBox" name="cosubs"/>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="btnplay">
+                          <property name="text">
+                           <string>play</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
                       </item>
                      </layout>
-                    </item>
-                    <item>
-                     <widget class="QPushButton" name="btnplay">
-                      <property name="text">
-                       <string>play</string>
-                      </property>
-                     </widget>
                     </item>
                    </layout>
                   </item>
