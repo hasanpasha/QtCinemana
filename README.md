@@ -1,4 +1,4 @@
-# cinemana GUI app
+# QtCinemana
 
 
 ## Screenshots
@@ -16,7 +16,7 @@ firstly download the source:
 $ git clone https://github.com/hasanpasha/QtCinemana
 $ cd cinemana
 ```
-Now you need to get the reqired packages:
+Now you need to get the reuqired packages:
 ```
 $ pip install -r requirments.txt
 ```
