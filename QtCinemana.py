@@ -52,7 +52,12 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.homeItems()
 
     ###################
-
+    def loading(self, state=True):
+        """ change cursor shape to loading """
+        if state:
+            self.setCursor(Qt.WaitCursor)
+        else:
+            self.unsetCursor()
 
     def handleButtons(self):
         self.btnsearch.clicked.connect(self.search)
@@ -69,6 +74,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             self.homeItems(clear=True)
 
     def homeItems(self, clear=None):
+        self.loading(True)
+
         current_tab = self.home_tabs.currentIndex()
         items_info, _ = getItems(itemsPerPage=50, videoKind=current_tab + 1)
 
@@ -78,24 +85,30 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         else:
             print(_)
             return
-        
+        self.loading(False)
 
     def player(self):
+        self.loading(True)
         # print(self.videos, self.subs)
+        video, subtitle = None, None
 
         # Get current chosen quality and sub
+        
         qua = self.coqual.currentText()
+        if qua:
+            video = self.videos[qua]
+        
         sub = self.cosubs.currentText()
-
-        video = self.videos[qua]
-        subtitle = self.subs[sub]
+        if sub:
+            subtitle = self.subs[sub]
 
         print(video, subtitle)
 
         mpvPlayer(video, subtitle)
+        self.loading(False)
 
     def clearSearchResult(self):
-
+        self.loading(True)
         # Hide clear button
         self.tbtnclear_search.hide()
 
@@ -108,9 +121,12 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # List Home Items
         self.homeItems()
+        self.loading(False)
+        
 
     def search(self):
         if search_kword := self.elsearch.text():
+            self.loading(True)
             print("Searching ...")
 
             current_tab = self.home_tabs.currentIndex()
@@ -126,8 +142,10 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                 self.tbtnclear_search.show()
             else:
                 print(_)
+            self.loading(False)
 
     def lstResult(self, json_info, clear=None):
+        self.loading(True)
         current_tab = self.home_tabs.currentIndex()
 
         if current_tab == 0:
@@ -169,8 +187,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             it.setFlags(it.flags() | ~Qt.ItemIsSelectable)
 
             self.listWidget.addItem(it)
+
+        self.loading(False)
     
     def viewItem(self, item):
+        self.loading(True)
         # print(item.data(Qt.UserRole))
         nb, kind = item.data(Qt.UserRole)
         
@@ -230,11 +251,21 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             # Add available Subs
             self.cosubs.clear()
             self.subs = {}
-            for i in info['translations']:
-                # print(i)
-                if i['extention'] != 'vtt':
-                    self.cosubs.addItem(i['name'])
-                    self.subs[i['name']] = i['file'] 
+            item_info, _ = getInfos(nb)
+            if item_info:
+                # print(item_info)
+                try:
+                    for i in item_info['translations']:
+                    # print(i)
+                        if i['extention'] != 'vtt':
+                            self.cosubs.addItem(i['name'])
+                            self.subs[i['name']] = i['file'] 
+                except:
+                    print("No Available subs")
+
+            else:
+                print(_)
+                return 
 
             # Add available video qualities
             # Get videos data
@@ -292,8 +323,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         else:
             print(_)
             return
+        
+        self.loading(False)
 
     def refreshInfo(self, item):
+        self.loading(True)
         nb = item.data(Qt.UserRole)
         print(nb)
 
@@ -325,7 +359,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             print(_)
             return
 
-
+        self.loading(False)
 
 if __name__ == '__main__':
     app = QApplication([])
