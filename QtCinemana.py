@@ -39,12 +39,19 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.subs = {}
 
         # Search on tab change
-        self.home_tabs.currentChanged.connect(self.search) #changed!
+        self.home_tabs.currentChanged.connect(self.handleTabChanges) #changed!
         # self.connect(self.home_tabs, SIGNAL('currentChanged(int)'), self.search)
         # self.home_tabs.blockSignals(False)
 
-    # def homeItems():
-        
+        # Indicates the current search results page or home items page
+        self.pageNumber = 1
+
+    ###################
+
+        # BEGIN PROGRAM WITH HOME 
+        self.homeItems()
+
+    ###################
 
 
     def handleButtons(self):
@@ -53,6 +60,24 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             lambda: self.stackedWidget.setCurrentIndex(0))
         self.btnplay.clicked.connect(self.player)
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
+        
+    def handleTabChanges(self):
+        if search_kword := self.elsearch.text():
+            self.search()
+
+        else:
+            self.homeItems(clear=True)
+
+    def homeItems(self, clear=None):
+        current_tab = self.home_tabs.currentIndex()
+        items_info, _ = getItems(itemsPerPage=50, videoKind=current_tab + 1)
+
+        if items_info:
+            self.lstResult(items_info, clear=clear)
+        
+        else:
+            print(_)
+            return
         
 
     def player(self):
@@ -81,6 +106,9 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         # Clear search line
         self.elsearch.clear()
 
+        # List Home Items
+        self.homeItems()
+
     def search(self):
         if search_kword := self.elsearch.text():
             print("Searching ...")
@@ -92,14 +120,14 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             search_resuslt, _ = search(videoTitle=search_kword, type=types[current_tab])
 
             if search_resuslt:
-                self.lstResult(search_resuslt, search=True)
+                self.lstResult(search_resuslt, clear=True)
                 
                 # Show search result clear button
                 self.tbtnclear_search.show()
             else:
                 print(_)
 
-    def lstResult(self, json_info, search=None):
+    def lstResult(self, json_info, clear=None):
         current_tab = self.home_tabs.currentIndex()
 
         if current_tab == 0:
@@ -109,7 +137,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         else:
             return
 
-        if search != None:
+        if clear != None:
             self.listWidget.clear()
 
         self.listWidget.setIconSize(250 * QSize(2, 2))

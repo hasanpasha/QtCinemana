@@ -56,7 +56,7 @@ def getItems(**infos):
     data, info = get_items_data(url)
 
     if data:
-        return data[0], info
+        return data, info
     
     else:
         # delete the last entry cache, so it won't return null next time
