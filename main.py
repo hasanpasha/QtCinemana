@@ -25,6 +25,9 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         # Initialize handlers
         self.handleButtons()
 
+        # Hide search-result-clear button
+        self.tbtnclear_search.hide()
+
         # Items List 
         self.listWidget = QListWidget()
         self.movies_listwidget.itemClicked.connect(self.viewItem)
@@ -34,6 +37,14 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         # Videos and subs for player
         self.videos = {}
         self.subs = {}
+
+        # Search on tab change
+        self.home_tabs.currentChanged.connect(self.search) #changed!
+        # self.connect(self.home_tabs, SIGNAL('currentChanged(int)'), self.search)
+        # self.home_tabs.blockSignals(False)
+
+    # def homeItems():
+        
 
 
     def handleButtons(self):
@@ -59,11 +70,16 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         mpvPlayer(video, subtitle)
 
     def clearSearchResult(self):
+
+        # Hide clear button
+        self.tbtnclear_search.hide()
+
+        # Clear Search Reuslt
         self.movies_listwidget.clear()
         self.series_listwidget.clear()
 
         # Clear search line
-        self.elsearch
+        self.elsearch.clear()
 
     def search(self):
         if search_kword := self.elsearch.text():
@@ -77,6 +93,9 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
             if search_resuslt:
                 self.lstResult(search_resuslt, search=True)
+                
+                # Show search result clear button
+                self.tbtnclear_search.show()
             else:
                 print(_)
 
