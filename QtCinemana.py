@@ -12,7 +12,7 @@ from PyQt5.uic import loadUiType
 
 from os import path
 
-from scripts import get_thumb_image, get_poster_image, mpvPlayer
+from scripts import get_thumb_image, get_poster_image, Player
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 
@@ -27,6 +27,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Hide search-result-clear button
         self.tbtnclear_search.hide()
+        self.btncloseplayer.hide()
 
         # Items List 
         self.listWidget = QListWidget()
@@ -49,7 +50,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
     ###################
 
         # BEGIN PROGRAM WITH HOME 
-        self.homeItems()
+        # self.homeItems()
 
     ###################
     def loading(self, state=True):
@@ -65,9 +66,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             lambda: self.stackedWidget.setCurrentIndex(0))
         self.btnplay.clicked.connect(self.player)
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
+        self.btncloseplayer.clicked.connect(self.closePlayer)
         
     def handleTabChanges(self):
-        if search_kword := self.elsearch.text():
+        search_kword = self.elsearch.text()
+        if search_kword:
             self.search()
 
         else:
@@ -87,8 +90,14 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             return
         self.loading(False)
 
+    def closePlayer(self):
+        self.worker.active = False
+        self.playerThread.quit()
+        self.playerThread.wait()
+
+
     def player(self):
-        self.loading(True)
+        # self.loading(True)
         # print(self.videos, self.subs)
         video, subtitle = None, None
 
@@ -102,10 +111,33 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if sub:
             subtitle = self.subs[sub]
 
-        print(video, subtitle)
+        self.playerThread = QThread()
+        
+        # Create a worker object
+        self.worker = Player(video, subtitle)
+        
+        #  Move worker to the playerThread
+        self.worker.moveToThread(self.playerThread)
+        
+        #  Connect signals and slots
+        self.playerThread.started.connect(self.worker.play)
+        self.worker.finished.connect(self.playerThread.quit)
+        self.worker.finished.connect(self.worker.deleteLater)
+        self.playerThread.finished.connect(self.playerThread.deleteLater)
+        
+        #  Start the playerThread
+        self.playerThread.start()
 
-        mpvPlayer(video, subtitle)
-        self.loading(False)
+        # Final resets
+        self.btnplay.hide()
+        self.btncloseplayer.show()
+        
+        self.playerThread.finished.connect(
+            lambda: self.btnplay.show()
+        )
+        self.playerThread.finished.connect(
+            lambda: self.btncloseplayer.hide()
+        )
 
     def clearSearchResult(self):
         self.loading(True)
@@ -125,7 +157,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         
 
     def search(self):
-        if search_kword := self.elsearch.text():
+        search_kword = self.elsearch.text()
+        if search_kword:
             self.loading(True)
             print("Searching ...")
 
@@ -284,7 +317,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
             # print(self.videos, self.subs)
             # Set Poster image
-            if data := get_poster_image(info['imgObjUrl']):
+            data = get_poster_image(info['imgObjUrl'])
+            if data:
                 pixmap = QPixmap()
                 pixmap.loadFromData(data)
                 self.lposter.setPixmap(pixmap.scaled(300, 400, Qt.KeepAspectRatio))
