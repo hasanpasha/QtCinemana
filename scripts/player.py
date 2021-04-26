@@ -1,34 +1,40 @@
 
 import subprocess
+from PyQt5.QtCore import QObject, pyqtSignal
 
-def mpvPlayer(video, sub):
-    playLineArgs = ['mpv']
+class Player(QObject):
+    finished = pyqtSignal()
 
-    if video != None:
-        video = video.replace("\\", '')
-        playLineArgs.append(video)
+    def __init__(self, video, subtitle, *args, **kwargs):
+        QObject.__init__(self, *args, **kwargs)
+        # self.video = queue
+        # self.subtitle = subtitle
 
-    if sub != None:
-        sub = sub.replace("\\", '')
-        playLineArgs.append(f'--sub-file={sub}')
+        self.playLineArgs = ['mpv']
 
+        if video != None:
+            video = video.replace("\\", '')
+            self.playLineArgs.append(video)
 
-    if len(playLineArgs) > 1:
-        # options = ["--use-filedir-conf"]
-        
-        # for i in options:
-        #     playLineArgs.append(i)
+        if subtitle != None:
+            sub = subtitle.replace("\\", '')
+            self.playLineArgs.append(f'--sub-file={sub}')
 
-        # print(playLineArgs)
+        # if len(playLineArgs) > 1:
 
-        # Playing Video With Externel player
-        try:
-            player = subprocess.Popen(playLineArgs)
-            output, error = player.communicate()
+    def play(self):
+        self.active = True
 
-        except Exception as e:
-            print(f"[ERROR]: {e}")
-        else:
-            player.wait()
-                    
-                
+        if len(self.playLineArgs) > 1:
+            player = subprocess.Popen(self.playLineArgs)
+
+            while self.active:
+                if player.poll() == None:
+                    pass
+                else:
+                    break
+            
+            player.terminate()
+            # print(player.poll())
+
+            self.finished.emit()

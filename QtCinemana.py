@@ -12,7 +12,7 @@ from PyQt5.uic import loadUiType
 
 from os import path
 
-from scripts import get_thumb_image, get_poster_image, mpvPlayer
+from scripts import get_thumb_image, get_poster_image, Player
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 
@@ -27,6 +27,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Hide search-result-clear button
         self.tbtnclear_search.hide()
+        self.btncloseplayer.hide()
 
         # Items List 
         self.listWidget = QListWidget()
@@ -49,7 +50,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
     ###################
 
         # BEGIN PROGRAM WITH HOME 
-        self.homeItems()
+        # self.homeItems()
 
     ###################
     def loading(self, state=True):
@@ -65,6 +66,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             lambda: self.stackedWidget.setCurrentIndex(0))
         self.btnplay.clicked.connect(self.player)
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
+        self.btncloseplayer.clicked.connect(self.closePlayer)
         
     def handleTabChanges(self):
         search_kword = self.elsearch.text()
@@ -88,8 +90,14 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             return
         self.loading(False)
 
+    def closePlayer(self):
+        self.worker.active = False
+        self.playerThread.quit()
+        self.playerThread.wait()
+
+
     def player(self):
-        self.loading(True)
+        # self.loading(True)
         # print(self.videos, self.subs)
         video, subtitle = None, None
 
@@ -103,10 +111,33 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if sub:
             subtitle = self.subs[sub]
 
-        print(video, subtitle)
+        # print(video, subtitle)
 
-        mpvPlayer(video, subtitle)
-        self.loading(False)
+        self.playerThread = QThread()
+        # Step 3: Create a worker object
+        self.worker = Player(video, subtitle)
+        # Step 4: Move worker to the playerThread
+        self.worker.moveToThread(self.playerThread)
+        # Step 5: Connect signals and slots
+        self.playerThread.started.connect(self.worker.play)
+        self.worker.finished.connect(self.playerThread.quit)
+        self.worker.finished.connect(self.worker.deleteLater)
+        self.playerThread.finished.connect(self.playerThread.deleteLater)
+        # self.worker.progress.connect(self.reportProgress)
+        # Step 6: Start the playerThread
+        self.playerThread.start()
+
+        # Final resets
+        self.btnplay.hide()
+        self.btncloseplayer.show()
+        # self.
+        # self.longRunningBtn.setEnabled(False)
+        self.playerThread.finished.connect(
+            lambda: self.btnplay.show()
+        )
+        self.playerThread.finished.connect(
+            lambda: self.btncloseplayer.hide()
+        )
 
     def clearSearchResult(self):
         self.loading(True)
