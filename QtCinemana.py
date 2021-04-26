@@ -67,7 +67,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
         
     def handleTabChanges(self):
-        if search_kword := self.elsearch.text():
+        search_kword = self.elsearch.text()
+        if search_kword:
             self.search()
 
         else:
@@ -125,7 +126,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         
 
     def search(self):
-        if search_kword := self.elsearch.text():
+        search_kword = self.elsearch.text()
+        if search_kword:
             self.loading(True)
             print("Searching ...")
 
@@ -284,7 +286,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
             # print(self.videos, self.subs)
             # Set Poster image
-            if data := get_poster_image(info['imgObjUrl']):
+            data = get_poster_image(info['imgObjUrl'])
+            if data:
                 pixmap = QPixmap()
                 pixmap.loadFromData(data)
                 self.lposter.setPixmap(pixmap.scaled(300, 400, Qt.KeepAspectRatio))
