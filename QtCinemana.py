@@ -111,27 +111,27 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if sub:
             subtitle = self.subs[sub]
 
-        # print(video, subtitle)
-
         self.playerThread = QThread()
-        # Step 3: Create a worker object
+        
+        # Create a worker object
         self.worker = Player(video, subtitle)
-        # Step 4: Move worker to the playerThread
+        
+        #  Move worker to the playerThread
         self.worker.moveToThread(self.playerThread)
-        # Step 5: Connect signals and slots
+        
+        #  Connect signals and slots
         self.playerThread.started.connect(self.worker.play)
         self.worker.finished.connect(self.playerThread.quit)
         self.worker.finished.connect(self.worker.deleteLater)
         self.playerThread.finished.connect(self.playerThread.deleteLater)
-        # self.worker.progress.connect(self.reportProgress)
-        # Step 6: Start the playerThread
+        
+        #  Start the playerThread
         self.playerThread.start()
 
         # Final resets
         self.btnplay.hide()
         self.btncloseplayer.show()
-        # self.
-        # self.longRunningBtn.setEnabled(False)
+        
         self.playerThread.finished.connect(
             lambda: self.btnplay.show()
         )
