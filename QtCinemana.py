@@ -24,6 +24,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Hide search-result-clear button
         self.tbtnclear_search.hide()
+        
         self.btncloseplayer.hide()
 
         # Items List 
@@ -265,7 +266,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                       
                         tab = QListWidget()
                         tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
-                        tab.itemClicked.connect(self.refreshInfo)
+                        tab.currentItemChanged.connect(self.refreshInfo)
 
                         for e in eps[f"{s}"]:
                             eps_number = e['episodeNummer']
@@ -410,19 +411,19 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.loading(False)
 
     def addExternelSubtitle(self):
-        # Current chosen subtitle
-        if self.cosubs.currentText() != EXTERNEL_SUB:
-
-            # getting the file path
-            fname, _ = QFileDialog.getOpenFileName(self, 'Choose subtitle file', '~', "Subtitle Files (*.srt *.ass *.ssa *.vtt)")
-
-            if fname:
-                self.subs[EXTERNEL_SUB] = fname
+        # getting the file path
+        fname, _ = QFileDialog.getOpenFileName(self, 'Choose subtitle file', '~', "Subtitle Files (*.srt *.ass *.ssa *.vtt)")
+        if fname:
+            self.subs[EXTERNEL_SUB] = fname
+    
+            AllItems = [self.cosubs.itemText(i)
+                        for i in range(self.cosubs.count())]
+            if EXTERNEL_SUB not in AllItems:
                 self.cosubs.addItem(EXTERNEL_SUB)
 
-            else:
-                print(':: No subtitle file chosen')
-                
+        else:
+            print(':: No subtitle file chosen')
+            
 
 if __name__ == '__main__':
     app = QApplication([])
