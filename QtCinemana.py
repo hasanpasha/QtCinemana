@@ -1,21 +1,18 @@
 #!/usr/bin/python
 
 from cinemanaAPI import *
-
-# Import PyQt5
 from PyQt5.QtWidgets import *
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.uic import loadUiType
-
-
 from os import path
-
 from scripts import get_thumb_image, get_poster_image, Player
 
-MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
+BLANK = '---'
+EXTERNEL_SUB = 'externel subtitle'
 
+MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 class MainWidnow(QMainWindow, MAIN_CLASS):
     def __init__(self, parent=None):
         super(MainWidnow, self).__init__(parent)
@@ -67,6 +64,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.btnplay.clicked.connect(self.player)
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
         self.btncloseplayer.clicked.connect(self.closePlayer)
+        self.btnaddsub.clicked.connect(self.addExternelSubtitle)
         
     def handleTabChanges(self):
         search_kword = self.elsearch.text()
@@ -104,12 +102,17 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         # Get current chosen quality and sub
         
         qua = self.coqual.currentText()
-        if qua:
+        if qua != BLANK:
             video = self.videos[qua]
         
         sub = self.cosubs.currentText()
-        if sub:
+        if sub != BLANK:
             subtitle = self.subs[sub]
+
+
+        if video == None:
+            # if no video is available, then end the function..
+            return
 
         self.playerThread = QThread()
         
@@ -287,6 +290,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             item_info, _ = getInfos(nb)
             if item_info:
                 # print(item_info)
+                self.cosubs.addItem(BLANK)
                 try:
                     for i in item_info['translations']:
                     # print(i)
@@ -305,7 +309,12 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             videos_data, _ = getVideos(nb)
             if videos_data:
                 self.videos = {}
+
+                # Remove all previous items
                 self.coqual.clear()
+
+                # Add blank '--' 
+                self.coqual.addItem(BLANK)
                 for i in videos_data:
                     # print(i)
                     self.coqual.addItem(i['resolution'])
@@ -371,10 +380,14 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         if eps_info:
             self.subs = {}
-            for i in eps_info['translations']:
-                if i['extention'] != 'vtt':
-                    self.cosubs.addItem(i['name'])
-                    self.subs[i['name']] = i['file']
+            self.cosubs.addItem(BLANK)
+            try:
+                for i in eps_info['translations']:
+                    if i['extention'] != 'vtt':
+                        self.cosubs.addItem(i['name'])
+                        self.subs[i['name']] = i['file']
+            except:
+                print(':: No available subs')
 
         else:
             print(_)
@@ -386,6 +399,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if videos_data:
             self.videos = {}
             self.coqual.clear()
+            self.coqual.addItem(BLANK)
             for i in videos_data:
                 self.coqual.addItem(i['resolution'])
                 self.videos[i['resolution']] = i['videoUrl']
@@ -394,6 +408,21 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             return
 
         self.loading(False)
+
+    def addExternelSubtitle(self):
+        # Current chosen subtitle
+        if self.cosubs.currentText() != EXTERNEL_SUB:
+
+            # getting the file path
+            fname, _ = QFileDialog.getOpenFileName(self, 'Choose subtitle file', '~', "Subtitle Files (*.srt *.ass *.ssa *.vtt)")
+
+            if fname:
+                self.subs[EXTERNEL_SUB] = fname
+                self.cosubs.addItem(EXTERNEL_SUB)
+
+            else:
+                print(':: No subtitle file chosen')
+                
 
 if __name__ == '__main__':
     app = QApplication([])

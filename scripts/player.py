@@ -17,6 +17,7 @@ class Player(QObject):
             self.playLineArgs.append(video)
 
         if subtitle != None:
+            print(":: Subtitle added")
             sub = subtitle.replace("\\", '')
             self.playLineArgs.append(f'--sub-file={sub}')
 
@@ -28,6 +29,7 @@ class Player(QObject):
         if len(self.playLineArgs) > 1:
             player = subprocess.Popen(self.playLineArgs)
 
+            print('$ ' + ' '.join(self.playLineArgs))
             while self.active:
                 if player.poll() == None:
                     pass

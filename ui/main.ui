@@ -33,7 +33,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Home">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -489,6 +489,13 @@
                       <item>
                        <layout class="QVBoxLayout" name="verticalLayout_14">
                         <item>
+                         <widget class="QPushButton" name="btnaddsub">
+                          <property name="text">
+                           <string>Add Externel Subtitle</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
                          <layout class="QHBoxLayout" name="horizontalLayout_10">
                           <item>
                            <widget class="QComboBox" name="coqual"/>
@@ -508,7 +515,7 @@
                            </widget>
                           </item>
                           <item>
-                           <widget class="QToolButton" name="btncloseplayer">
+                           <widget class="QPushButton" name="btncloseplayer">
                             <property name="text">
                              <string>close player</string>
                             </property>
