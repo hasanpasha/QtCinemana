@@ -6,11 +6,13 @@ from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.uic import loadUiType
-from os import path
+from os import path, mkdir
 from scripts import get_thumb_image, get_poster_image, Player
+from json import dump, load
 
 BLANK = '---'
 EXTERNEL_SUB = 'externel subtitle'
+SEARCH_HISTORY_FILE = path.join(path.dirname(__file__), 'data/search_history_file.json')
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 class MainWidnow(QMainWindow, MAIN_CLASS):
@@ -44,6 +46,9 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Indicates the current search results page or home items page
         self.pageNumber = 1
+
+        # Set completer 
+        self.setSearchLineCompleter()
 
     ###################
 
@@ -159,12 +164,48 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.homeItems()
         self.loading(False)
         
+    def setSearchLineCompleter(self):
+        completer = QCompleter(self.loadSearchHistory())
+        self.elsearch.setCompleter(completer)
+
+
+    def loadSearchHistory(self):
+        # print('loading')
+        if not path.exists(SEARCH_HISTORY_FILE):
+            mkdir('data')
+            # print("Creating new file")
+            with open(SEARCH_HISTORY_FILE, 'x') as fo:
+                dump([], fo)
+
+        with open(SEARCH_HISTORY_FILE, 'r') as fo:
+            try:
+                # print("Loading data")
+                p_data = load(fo)
+                # print(p_data)
+            except:
+                p_data = []
+            finally:
+                # print(p_data)
+                return p_data
+
+
+    def addToSearchHistory(self, search_kword):
+        
+        p_data = self.loadSearchHistory()
+        # print(type(p_data))
+        p_data.append(search_kword)
+
+        with open(SEARCH_HISTORY_FILE, 'w') as fo:
+            dump(p_data, fo)
 
     def search(self):
         search_kword = self.elsearch.text()
         if search_kword:
+            # Add to search history
+            self.addToSearchHistory(search_kword)
+            self.setSearchLineCompleter()
+
             self.loading(True)
-            print("Searching ...")
 
             current_tab = self.home_tabs.currentIndex()
 
