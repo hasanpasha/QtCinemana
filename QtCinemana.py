@@ -13,6 +13,8 @@ from json import dump, load
 BLANK = '---'
 EXTERNEL_SUB = 'externel subtitle'
 SEARCH_HISTORY_FILE = path.join(path.dirname(__file__), 'data/search_history_file.json')
+DATA_PATH = path.join(path.dirname(__file__), 'data')
+
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
 class MainWidnow(QMainWindow, MAIN_CLASS):
@@ -172,7 +174,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
     def loadSearchHistory(self):
         # print('loading')
         if not path.exists(SEARCH_HISTORY_FILE):
-            mkdir('data')
+            if not path.exists(DATA_PATH):
+                mkdir('data')
             # print("Creating new file")
             with open(SEARCH_HISTORY_FILE, 'x') as fo:
                 dump([], fo)
@@ -193,10 +196,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         
         p_data = self.loadSearchHistory()
         # print(type(p_data))
-        p_data.append(search_kword)
+        if search_kword not in p_data:
+            p_data.append(search_kword)
 
-        with open(SEARCH_HISTORY_FILE, 'w') as fo:
-            dump(p_data, fo)
+            with open(SEARCH_HISTORY_FILE, 'w') as fo:
+                dump(p_data, fo)
 
     def search(self):
         search_kword = self.elsearch.text()
@@ -456,7 +460,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         fname, _ = QFileDialog.getOpenFileName(self, 'Choose subtitle file', '~', "Subtitle Files (*.srt *.ass *.ssa *.vtt)")
         if fname:
             self.subs[EXTERNEL_SUB] = fname
-    
+
+            # Get comboBox items
             AllItems = [self.cosubs.itemText(i)
                         for i in range(self.cosubs.count())]
             if EXTERNEL_SUB not in AllItems:
