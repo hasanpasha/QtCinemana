@@ -252,6 +252,18 @@
              <layout class="QVBoxLayout" name="verticalLayout_12">
               <item>
                <widget class="QLabel" name="lposter">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="midLineWidth">
+                 <number>1</number>
+                </property>
                 <property name="text">
                  <string>Poster</string>
                 </property>
@@ -420,16 +432,38 @@
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
                   <item>
-                   <widget class="QLabel" name="lstory">
-                    <property name="cursor">
-                     <cursorShape>IBeamCursor</cursorShape>
-                    </property>
-                    <property name="text">
-                     <string>story</string>
-                    </property>
-                    <property name="wordWrap">
+                   <widget class="QScrollArea" name="scrollArea">
+                    <property name="widgetResizable">
                      <bool>true</bool>
                     </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>714</width>
+                       <height>95</height>
+                      </rect>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_16">
+                      <item>
+                       <widget class="QLabel" name="lstory">
+                        <property name="cursor">
+                         <cursorShape>IBeamCursor</cursorShape>
+                        </property>
+                        <property name="text">
+                         <string>story</string>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                        <property name="wordWrap">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
                    </widget>
                   </item>
                  </layout>
