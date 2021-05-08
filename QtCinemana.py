@@ -1,21 +1,22 @@
 #!/usr/bin/python
 
 from cinemanaAPI import *
-
-# Import PyQt5
 from PyQt5.QtWidgets import *
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.uic import loadUiType
-
-
-from os import path
-
+from os import path, mkdir
 from scripts import get_thumb_image, get_poster_image, Player
+from json import dump, load
+
+BLANK = '---'
+EXTERNEL_SUB = 'externel subtitle'
+SEARCH_HISTORY_FILE = path.join(path.dirname(__file__), 'data/search_history_file.json')
+DATA_PATH = path.join(path.dirname(__file__), 'data')
+
 
 MAIN_CLASS, _ = loadUiType(path.join(path.dirname(__file__), 'ui/main.ui'))
-
 class MainWidnow(QMainWindow, MAIN_CLASS):
     def __init__(self, parent=None):
         super(MainWidnow, self).__init__(parent)
@@ -27,6 +28,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Hide search-result-clear button
         self.tbtnclear_search.hide()
+        
         self.btncloseplayer.hide()
 
         # Items List 
@@ -46,6 +48,9 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         # Indicates the current search results page or home items page
         self.pageNumber = 1
+
+        # Set completer 
+        self.setSearchLineCompleter()
 
     ###################
 
@@ -67,6 +72,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.btnplay.clicked.connect(self.player)
         self.tbtnclear_search.clicked.connect(self.clearSearchResult)
         self.btncloseplayer.clicked.connect(self.closePlayer)
+        self.btnaddsub.clicked.connect(self.addExternelSubtitle)
         
     def handleTabChanges(self):
         search_kword = self.elsearch.text()
@@ -104,12 +110,17 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         # Get current chosen quality and sub
         
         qua = self.coqual.currentText()
-        if qua:
+        if qua != BLANK:
             video = self.videos[qua]
         
         sub = self.cosubs.currentText()
-        if sub:
+        if sub != BLANK:
             subtitle = self.subs[sub]
+
+
+        if video == None:
+            # if no video is available, then end the function..
+            return
 
         self.playerThread = QThread()
         
@@ -155,12 +166,50 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.homeItems()
         self.loading(False)
         
+    def setSearchLineCompleter(self):
+        completer = QCompleter(self.loadSearchHistory())
+        self.elsearch.setCompleter(completer)
+
+
+    def loadSearchHistory(self):
+        # print('loading')
+        if not path.exists(SEARCH_HISTORY_FILE):
+            if not path.exists(DATA_PATH):
+                mkdir('data')
+            # print("Creating new file")
+            with open(SEARCH_HISTORY_FILE, 'x') as fo:
+                dump([], fo)
+
+        with open(SEARCH_HISTORY_FILE, 'r') as fo:
+            try:
+                # print("Loading data")
+                p_data = load(fo)
+                # print(p_data)
+            except:
+                p_data = []
+            finally:
+                # print(p_data)
+                return p_data
+
+
+    def addToSearchHistory(self, search_kword):
+        
+        p_data = self.loadSearchHistory()
+        # print(type(p_data))
+        if search_kword not in p_data:
+            p_data.append(search_kword)
+
+            with open(SEARCH_HISTORY_FILE, 'w') as fo:
+                dump(p_data, fo)
 
     def search(self):
         search_kword = self.elsearch.text()
         if search_kword:
+            # Add to search history
+            self.addToSearchHistory(search_kword)
+            self.setSearchLineCompleter()
+
             self.loading(True)
-            print("Searching ...")
 
             current_tab = self.home_tabs.currentIndex()
 
@@ -262,7 +311,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                       
                         tab = QListWidget()
                         tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
-                        tab.itemClicked.connect(self.refreshInfo)
+                        tab.currentItemChanged.connect(self.refreshInfo)
 
                         for e in eps[f"{s}"]:
                             eps_number = e['episodeNummer']
@@ -287,6 +336,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             item_info, _ = getInfos(nb)
             if item_info:
                 # print(item_info)
+                self.cosubs.addItem(BLANK)
                 try:
                     for i in item_info['translations']:
                     # print(i)
@@ -305,7 +355,12 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             videos_data, _ = getVideos(nb)
             if videos_data:
                 self.videos = {}
+
+                # Remove all previous items
                 self.coqual.clear()
+
+                # Add blank '--' 
+                self.coqual.addItem(BLANK)
                 for i in videos_data:
                     # print(i)
                     self.coqual.addItem(i['resolution'])
@@ -370,6 +425,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         eps_info , _ = getInfos(nb)
 
         if eps_info:
+            self.subs = {}
+            self.cosubs.addItem(BLANK)
             # If translation is available 
             try:
                 for i in eps_info['translations']:
@@ -377,8 +434,8 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                         self.cosubs.addItem(i['name'])
                         self.subs[i['name']] = i['file']
             except:
-                print("No Available subs")
-
+                print(':: No available subs')
+                            
         else:
             print(_)
             return
@@ -389,6 +446,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if videos_data:
             self.videos = {}
             self.coqual.clear()
+            self.coqual.addItem(BLANK)
             for i in videos_data:
                 self.coqual.addItem(i['resolution'])
                 self.videos[i['resolution']] = i['videoUrl']
@@ -397,6 +455,22 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
             return
 
         self.loading(False)
+
+    def addExternelSubtitle(self):
+        # getting the file path
+        fname, _ = QFileDialog.getOpenFileName(self, 'Choose subtitle file', '~', "Subtitle Files (*.srt *.ass *.ssa *.vtt)")
+        if fname:
+            self.subs[EXTERNEL_SUB] = fname
+
+            # Get comboBox items
+            AllItems = [self.cosubs.itemText(i)
+                        for i in range(self.cosubs.count())]
+            if EXTERNEL_SUB not in AllItems:
+                self.cosubs.addItem(EXTERNEL_SUB)
+
+        else:
+            print(':: No subtitle file chosen')
+            
 
 if __name__ == '__main__':
     app = QApplication([])
