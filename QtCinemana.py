@@ -427,6 +427,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         if eps_info:
             self.subs = {}
             self.cosubs.addItem(BLANK)
+            # If translation is available 
             try:
                 for i in eps_info['translations']:
                     if i['extention'] != 'vtt':
@@ -434,7 +435,7 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
                         self.subs[i['name']] = i['file']
             except:
                 print(':: No available subs')
-
+                            
         else:
             print(_)
             return
