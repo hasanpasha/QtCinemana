@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import * 
 from PyQt5.uic import loadUiType
-# from qt_material import apply_stylesheet
 from os import path, mkdir
 from scripts import get_thumb_image, get_poster_image, Player
 from json import dump, load
@@ -191,6 +190,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         QMainWindow.__init__(self)
         self.setupUi(self)
 
+        # Set the Custom theme
+        toggle_stylesheet('dark.qss')
+        self.actionDark_Theme.triggered[bool].connect(self.setTheme)
+
+
         # Threads to prevent gui frozen
         # Threads List
         self.threadPools = []
@@ -235,6 +239,12 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.homeItems()
 
     ###################
+
+    def setTheme(self, checked=False):
+        if checked:
+            toggle_stylesheet('dark.qss')
+        else:
+            toggle_stylesheet('light.qss')
 
     def showErrorDialog(self, error):
         self.loading(False)
@@ -626,9 +636,27 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
 
         self.loading(False)
 
+# Change the theme
+def toggle_stylesheet(path):
+    '''
+    Toggle the stylesheet to use the desired path in the Qt resource
+    system (prefixed by `:/`) or generically (a path to a file on
+    system).
+    '''
+
+    # get the QApplication instance,  or crash if not set
+    app = QApplication.instance()
+    if app is None:
+        raise RuntimeError("No Qt Application found.")
+
+    file = QFile(path)
+    file.open(QFile.ReadOnly | QFile.Text)
+    stream = QTextStream(file)
+    app.setStyleSheet(stream.readAll())
+
 if __name__ == '__main__':
     app = QApplication([])
-    # apply_stylesheet(app, theme='dark_amber.xml')
+
     window = MainWidnow()
     window.show()
     app.exec_()
