@@ -105,6 +105,18 @@
               <property name="text">
                <string>search</string>
               </property>
+              <property name="shortcut">
+               <string/>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
              </widget>
             </item>
            </layout>
@@ -130,6 +142,9 @@
                 <property name="editTriggers">
                  <set>QAbstractItemView::NoEditTriggers</set>
                 </property>
+                <property name="tabKeyNavigation">
+                 <bool>true</bool>
+                </property>
                 <property name="showDropIndicator" stdset="0">
                  <bool>false</bool>
                 </property>
@@ -139,11 +154,14 @@
                 <property name="defaultDropAction">
                  <enum>Qt::IgnoreAction</enum>
                 </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::NoSelection</enum>
+                </property>
                 <property name="textElideMode">
                  <enum>Qt::ElideLeft</enum>
                 </property>
                 <property name="movement">
-                 <enum>QListView::Static</enum>
+                 <enum>QListView::Free</enum>
                 </property>
                 <property name="isWrapping" stdset="0">
                  <bool>true</bool>
@@ -444,8 +462,8 @@
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>714</width>
-                       <height>83</height>
+                       <width>43</width>
+                       <height>28</height>
                       </rect>
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout_16">
