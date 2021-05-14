@@ -3,12 +3,24 @@
 # date: 2021/4/3 Sat
 
 from ._options import Options 
-
+from ._logger import logger
 from ring import lru
 from json import loads
-from requests import get
 
-from ._logger import logger
+import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
+def get(url, **kwargs):
+    """ 
+    Custom get function that implements retry 
+    mechanism into python requests library
+    """
+    with requests.Session() as s:
+        retries = Retry(total=5, backoff_factor=1, status_forcelist=[ 502, 503, 504 ])
+        s.mount('https://', HTTPAdapter(max_retries=retries))
+        return s.get(url, **kwargs)
+
 
 def get_data(url):
     """ fetch the data """
