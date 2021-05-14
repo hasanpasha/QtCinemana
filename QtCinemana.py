@@ -290,11 +290,11 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         homeItemsThread = GetItems(getItems, current_tab, itemsPerPage=20, videoKind=current_tab + 1)
         self.threadPools.append(homeItemsThread)        # Add the thread to the list so It won't destroyed
         
-        homeItemsThread.RESULT_DATA.connect(self.lstResult)
+
+        homeItemsThread.RESULT_DATA.connect(lambda data, current_tab: self.lstResult(data, current_tab, clear=clear))
 
         # Start the thread
         self.threadPools[-1].start()
-
         self.loading(False)
 
     def closePlayer(self):
