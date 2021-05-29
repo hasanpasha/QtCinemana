@@ -5,11 +5,8 @@ from PyQt5.QtCore import QObject, pyqtSignal
 class Player(QObject):
     finished = pyqtSignal()
 
-    def __init__(self, video, subtitle, *args, **kwargs):
-        QObject.__init__(self, *args, **kwargs)
-        # self.video = queue
-        # self.subtitle = subtitle
-
+    def __init__(self, video, subtitle):
+        QObject.__init__(self)
         self.playLineArgs = ['mpv']
 
         if video != None:
@@ -21,22 +18,17 @@ class Player(QObject):
             sub = subtitle.replace("\\", '')
             self.playLineArgs.append(f'--sub-file={sub}')
 
-        # if len(playLineArgs) > 1:
-
     def play(self):
         self.active = True
 
         if len(self.playLineArgs) > 1:
-            player = subprocess.Popen(self.playLineArgs)
+            playerProcess = subprocess.Popen(self.playLineArgs)
 
             print('$ ' + ' '.join(self.playLineArgs))
             while self.active:
-                if player.poll() == None:
-                    pass
-                else:
+                if playerProcess.poll() != None:
                     break
-            
-            player.terminate()
-            # print(player.poll())
+
+            playerProcess.terminate()
 
             self.finished.emit()
