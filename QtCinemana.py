@@ -12,9 +12,10 @@ from time import sleep
 
 BLANK = '---'
 EXTERNEL_SUB = 'externel subtitle'
-SEARCH_HISTORY_FILE = path.join(path.dirname(__file__), 'data' + path.sep + 'search_history_file.json')
-ASSETS_FOLDER = ILE = path.join(path.dirname(__file__), 'assets')
+SEARCH_HISTORY_FILE = path.join(path.dirname(__file__), 'data' , 'search_history_file.json')
+ASSETS_FOLDER = path.join(path.dirname(__file__), 'assets')
 DATA_PATH = path.join(path.dirname(__file__), 'data')
+ROOT_PATH = path.dirname(__file__)
 
 
 class GetItems(QThread):
@@ -637,19 +638,18 @@ class MainWidnow(QMainWindow, MAIN_CLASS):
         self.loading(False)
 
 # Change the theme
-def toggle_stylesheet(path):
+def toggle_stylesheet(theme):
     '''
     Toggle the stylesheet to use the desired path in the Qt resource
     system (prefixed by `:/`) or generically (a path to a file on
     system).
     '''
-
     # get the QApplication instance,  or crash if not set
     app = QApplication.instance()
     if app is None:
         raise RuntimeError("No Qt Application found.")
 
-    file = QFile(path)
+    file = QFile(path.join(ROOT_PATH, 'themes', theme))
     file.open(QFile.ReadOnly | QFile.Text)
     stream = QTextStream(file)
     app.setStyleSheet(stream.readAll())
