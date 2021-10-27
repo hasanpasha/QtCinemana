@@ -1,5 +1,8 @@
 # QtCinemana
 
+## Maintainer Note:
+I'm no longer working on this app...
+
 
 ## Screenshots
   ##### Search
@@ -24,12 +27,3 @@ To run the program:
 ```
 $ python QtCinemana.py
 ```
-
-## To Do:
-- [ ] Add filters
-- [ ] Add Splash Screen
-- [ ] Add Error dialoge
-
-## To do in the far future:
-- [ ] Integrated video player
-- [ ] Add download feature 
